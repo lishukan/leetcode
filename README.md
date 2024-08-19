@@ -15,6 +15,6 @@
 | <a href='https://leetcode.cn/problems/longest-consecutive-sequence/description/?envType=study-plan-v2&envId=top-100-liked'> 128. 最长连续序列</a> | <span style="color:orange">中等</span>|  去重+排序，用一个变量记录最大的连续次数即可    | 哈希   |  查找时，可以直接对数组去重、排序
 | <a href='https://leetcode.cn/problems/move-zeroes/description/?envType=study-plan-v2&envId=top-100-liked'> 283.移动零</a> | <span style="color:green">简单</span>|  N=0开始，遍历数组, 直接把非零数往前挪到第N位置，然后增大N。遍历结束以后把下标大于N的都设置为0   |  双指针  |  
 | <a href='https://leetcode.cn/problems/container-with-most-water/?envType=study-plan-v2&envId=top-100-liked'> 11. 盛最多水的容器</a> | <span style="color:orange">中等</span>|  一直移动矮边，就能快速找到   | 双指针   |  要找到移动矮边才有可能让容积增大的规律
-| <a href='https://leetcode.cn/problems/trapping-rain-water/?envType=study-plan-v2&envId=top-100-liked'> 42. 接雨水</a> | <span style="color:red">困难</span>|  一直移动矮边，就能快速找到   | 双指针   | 和上面那题一样的思路  要找到移动矮边才有可能让容积增大的规律
+| <a href='https://leetcode.cn/problems/trapping-rain-water/?envType=study-plan-v2&envId=top-100-liked'> 42. 接雨水</a> | <span style="color:red">困难</span>|  一直移动矮边,如果新移动的边比之前矮的还要矮就更新容积   | 双指针   | 和上面那题一样的思路  要找到移动矮边才有可能让容积增大的规律
 
 
