@@ -16,3 +16,7 @@
 | <a href='https://leetcode.cn/problems/group-anagrams/description/?envType=study-plan-v2&envId=top-100-liked'> 49. 字母异位词分组</a>|<span style="color:orange">中等</span>|  直接把出现的所有字符串进行排序，把排序后的字符当作键去搜构造字典    | 哈希   | 
 | <a href='https://leetcode.cn/problems/longest-consecutive-sequence/description/?envType=study-plan-v2&envId=top-100-liked'> 128. 最长连续序列</a> | <span style="color:orange">中等</span>|  去重+排序，用一个变量记录最大的连续次数即可    | 哈希   |  查找时，可以直接对数组去重、排序
 | <a href='https://leetcode.cn/problems/move-zeroes/description/?envType=study-plan-v2&envId=top-100-liked'> 283.移动零</a> | <span style="color:green">简单</span>|  N=0开始，遍历数组, 直接把非零数往前挪到第N位置，然后增大N。遍历结束以后把下标大于N的都设置为0   |  双指针  |  
+| <a href='https://leetcode.cn/problems/find-all-anagrams-in-a-string/description/?envType=study-plan-v2&envId=top-100-liked'> 438. 找到字符串中所有字母异位词 </a> | <span style="color:orange">中等</span>|  粗暴解法直接按固定步长便历，然后比较子串是否相等（但是比较要用技巧）    |  滑动窗口，哈希  | 异位词比较是否相等：被比较的串可以先排序，比较的时候都先把字符串排序再比较相等（python解法不超时但是性能落后）； **可以用哈希数组（利用全小写字母的特点，直接建立一个26维的数组），用这种方式进行比较是否相等**
+
+
+
