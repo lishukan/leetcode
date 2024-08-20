@@ -7,7 +7,7 @@
 |题目|难度|解法|标签|经验|
 |:--------|:-----------|:-----------|:---------------|:-------|
 | <a href='https://leetcode.cn/problems/two-sum/?envType=study-plan-v2&envId=top-100-liked'> 1.两数之和</a> |<span style="color:green">简单</span>| 用map去实现快速查找；惰性建立map  |   哈希      |
-| <a href='https://leetcode.cn/problems/longest-substring-without-repeating-characters/description/?envType=study-plan-v2&envId=top-100-liked'> 3. 无重复字符的最长子串</a> |<span style="color:orange">中等</span>| 先实现普通O(n2)的实现，然后分析题目，利用“上次失败地点”的信息，跳过一部分遍历;或者使用滑动窗口思想，遇到有重复时，右指针不动座指针一直挪动到两个指针之间没有重复时再开始挪动右指针  |   哈希，滑动窗口      |
+| <a href='https://leetcode.cn/problems/longest-substring-without-repeating-characters/description/?envType=study-plan-v2&envId=top-100-liked'> 3. 无重复字符的最长子串</a> |<span style="color:orange">中等</span>| 先实现普通O(n2)的实现，然后分析题目，利用“上次失败地点”的信息，跳过一部分遍历;或者使用滑动窗口思想，遇到有重复时，右指针不动座指针一直挪动到两个指针之间没有重复时再开始挪动右指针  |   哈希，滑动窗口      |用滑动窗口思想，遇到有重复时，右指针不动左指针一直挪动到两个指针之间没有重复时再开始挪动右指针；要利用上次遍历时的失败信息
 | <a href='https://leetcode.cn/problems/median-of-two-sorted-arrays/'> 4.找两个正序数组的中位数</a>|<span style="color:red">困难</span> | 实际上还是双指针,用两个指针来分隔左右的数据，需要利用上中位数的性质 | 双指针  | 中位数的性质：1左边最大小于右边最小 2:下标之和为(m+n+1)//2|
 | <a href='https://leetcode.cn/problems/container-with-most-water/?envType=study-plan-v2&envId=top-100-liked'> 11. 盛最多水的容器</a> | <span style="color:orange">中等</span>|  一直移动矮边，就能快速找到   | 双指针   |  要找到移动矮边才有可能让容积增大的规律
 | <a href='https://leetcode.cn/problems/3sum/description/'> 15.三数之和</a> |<span style="color:orange">中等</span>| 最差三层循环ijk，可以先排序数组，然后使用双指针找jk两数之和; 并且下一轮循环时检查是否和上一轮起点相同，进行去重  | 双指针   |为了保证答案不重复也方便按照值大小顺序查找，可以直接将数组排序      |
