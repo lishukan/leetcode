@@ -18,4 +18,5 @@
 | <a href='https://leetcode.cn/problems/move-zeroes/description/?envType=study-plan-v2&envId=top-100-liked'> 283.移动零</a> | <span style="color:green">简单</span>|  N=0开始，遍历数组, 直接把非零数往前挪到第N位置，然后增大N。遍历结束以后把下标大于N的都设置为0   |  双指针  |  
 | <a href='https://leetcode.cn/problems/find-all-anagrams-in-a-string/description/?envType=study-plan-v2&envId=top-100-liked'> 438. 找到字符串中所有字母异位词 </a> | <span style="color:orange">中等</span>|  粗暴解法直接按固定步长便历，然后比较子串是否相等（但是比较要用技巧）    |  滑动窗口，哈希  | 异位词比较是否相等：被比较的串可以先排序，比较的时候都先把字符串排序再比较相等（python解法不超时但是性能落后）； **可以用哈希数组（利用全小写字母的特点，直接建立一个26维的数组），用这种方式进行比较是否相等**
 | <a href='https://leetcode.cn/problems/shortest-distance-to-a-character/description/'> 821. 字符的最短距离 </a> | <span style="color:green">简单</span>|  遍历数组，用一个变量缓存上一次字符等于目标字符的下标，当遇到又一个相等的字符时，将这两个下标中间一分为二，左边的计算往左的距离，右边的计算往右边的距离   | 双指针 |   下标等于（left+right)//2的 应该把它放左边 
+| <a href='https://leetcode.cn/problems/subarray-sum-equals-k/description/?envType=study-plan-v2&envId=top-100-liked'> 560. 和为 K 的子数组 </a> | <span style="color:orange">中等</span> |  需要吃透前缀和的特性，只遍历一次。利用前缀和的特性,求pre[0~-j-1]=x-k的个数从而求得pre[j~i]=k的个数 | 前缀和、哈希表 |   数组不单调不能用滑动窗口
 
